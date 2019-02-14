@@ -15,4 +15,9 @@ class Note extends Model
     {
         return $this->belongsTo('App\Card');
     }
+
+    public function user()
+    {
+        return $this->belongsTo('App\User');
+    }
 }
